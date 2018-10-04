@@ -1,0 +1,43 @@
+
+	git remote add origin "link"
+	
+	git pull origin master
+	
+	git status
+	
+	git add file.txt   / git add .txt     / git add .  or git add -A
+	
+	git commit        // this will open editor 
+	
+	git commit -m " enter your comment here "
+	
+	git commit -a -m " enter your commet here"
+	
+	git branch NewBranchName
+	
+	git checkout NewBranchName
+	
+	git merge NewBranchName
+	
+	git rebase ???/
+	
+	
+	
+	
+	
+	Steps :
+	
+	
+	git init
+	
+	git add .
+	
+	git commit -m "First commit"
+	
+	git remote add origin remote repository URL    # Sets the new remote
+	
+	git remote -v  # Verifies the new remote URL
+	
+	git push origin master            / git push -f origin master
+	
+	
