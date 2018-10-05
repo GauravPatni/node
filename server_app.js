@@ -2,13 +2,15 @@
 const http = require('http');
 const Mongo = require('mongodb').MongoClient;
 const urlQuery = require('url');
-const url = "mongodb://localhost:27017/mydb";
+
+const url = "mongodb://gaurav:gaurav12345@ds025439.mlab.com:25439/mydb";
+//const url = "mongodb://localhost:27017/mydb";
 
 const dbName = "mydb";
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-const collection = "Collection_123";
+const collection = "collection_123";
 
 const server = http.createServer((req,res)=>{
 
@@ -207,7 +209,7 @@ function insertData(collectionName,dataObj){
         })
         .catch((error)=>{
 
-            console.log("Error:Client Received " + err);
+            console.log("Error:Client Received " + error);
             reject("Error in Client Conenction");
         });
 
