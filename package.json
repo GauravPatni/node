@@ -1,0 +1,17 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "sample node server application ",
+  "main": "server_app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gaurav patni",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb":"^3.1.6"
+  },
+  "scripts":{
+    "start":"node server_app.js"
+  }
+}
