@@ -87,6 +87,11 @@ const server = http.createServer((req,res)=>{
         
 
     }
+    else if (req.url.match("^/favicon.ico"))
+    {
+        res.writeHead(204,{'Content-type':'text/html'});
+        res.end();
+    }
 });
 
 server.listen(port ,()=>{
